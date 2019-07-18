@@ -21,11 +21,13 @@ RUN apt-get update \
   clang-$llvmver \
   clang-tools-$llvmver \
   clang-format-$llvmver \
+  clang-tidy-$llvmver \
   python-clang-$llvmver \
   libfuzzer-$llvmver-dev \
   lldb-$llvmver \
   lld-$llvmver \
   libc++-$llvmver-dev \
   libc++abi-$llvmver-dev \
-  libomp-$llvmver-dev 
+  libomp-$llvmver-dev \
+  git-core
 

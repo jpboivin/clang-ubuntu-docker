@@ -25,6 +25,7 @@ RUN apt-get update \
   clang-format-$llvmver \
   clang-tidy-$llvmver \
   python-clang-$llvmver \
+  llvm-$llvmver-dev \
   libfuzzer-$llvmver-dev \
   lldb-$llvmver \
   lld-$llvmver \

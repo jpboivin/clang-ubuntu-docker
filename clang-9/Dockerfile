@@ -32,5 +32,6 @@ RUN apt-get update \
   libc++abi-$llvmver-dev \
   libomp-$llvmver-dev \
   pkg-config \
+  python2.7 \
   git-core
 

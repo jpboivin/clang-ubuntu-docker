@@ -31,5 +31,6 @@ RUN apt-get update \
   libc++-$llvmver-dev \
   libc++abi-$llvmver-dev \
   libomp-$llvmver-dev \
+  pkg-config \
   git-core
 

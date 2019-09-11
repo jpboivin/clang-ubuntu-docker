@@ -17,6 +17,8 @@ RUN apt-get update \
  && apt-get install -y \
   ca-certificates \
   build-essential \
+# Common Libraries
+  uuid-dev \
 # Install Tool
   clang-$llvmver \
   clang-tools-$llvmver \

@@ -15,7 +15,7 @@ RUN apt-get update \
  && rm llvm-snapshot.gpg.key \
  && apt-get update \
  && apt-get upgrade -y \
- && apt-get install -y \
+ && apt-get install -y -f -m \
   ca-certificates \
   build-essential \
 # Common Libraries
@@ -26,9 +26,6 @@ RUN apt-get update \
   clang-format-$llvmver \
   clang-tidy-$llvmver \
   python-clang-$llvmver \
-  llvm-$llvmver \
-  llvm-$llvmver-dev \
-  llvm-$llvmver-tools \
   libfuzzer-$llvmver-dev \
   lldb-$llvmver \
   lld-$llvmver \

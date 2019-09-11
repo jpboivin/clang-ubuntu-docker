@@ -14,7 +14,7 @@ RUN apt-get update \
  && apt-key add llvm-snapshot.gpg.key \
  && rm llvm-snapshot.gpg.key \
  && apt-get update \
- && apt-get upgrade \
+ && apt-get upgrade -y \
  && apt-get install -y \
   ca-certificates \
   build-essential \
@@ -26,6 +26,9 @@ RUN apt-get update \
   clang-format-$llvmver \
   clang-tidy-$llvmver \
   python-clang-$llvmver \
+  llvm-$llvmver \
+  llvm-$llvmver-dev \
+  llvm-$llvmver-tools \
   libfuzzer-$llvmver-dev \
   lldb-$llvmver \
   lld-$llvmver \

@@ -15,7 +15,7 @@ RUN apt-get update \
  && rm llvm-snapshot.gpg.key \
  && apt-get update \
  && apt-get upgrade -y \
- && apt-get install -y -f -m \
+ && apt-get install -y \
   ca-certificates \
   build-essential \
 # Common Libraries

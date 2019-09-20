@@ -27,11 +27,17 @@ RUN apt-get update \
   clang-tidy-$llvmver \
   python-clang-$llvmver \
   libfuzzer-$llvmver-dev \
-  lldb-$llvmver \
+  llvm-$llvmver \
+  llvm-$llvmver-tools \
+  llvm-$llvmver-dev \
+  liblldb-9 \
+  python-lldb-9 \
+#  lldb-$llvmver
   lld-$llvmver \
   libc++-$llvmver-dev \
   libc++abi-$llvmver-dev \
   libomp-$llvmver-dev \
   pkg-config \
-  git-core
-
+  git-core \
+ && apt-get download lldb-9 \
+ && dpkg -i --ignore-depends=llvm-9-tools lldb-9_1%3a9~svn372167-1~exp1~20190917193124.56_amd64.deb
